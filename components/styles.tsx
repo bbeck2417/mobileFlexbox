@@ -8,7 +8,7 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-around",
     ...Platform.select({
-      ios: { paddingTop: 40 },
+      ios: { paddingTop: 0 },
       android: { paddingTop: StatusBar.currentHeight },
     }),
   },

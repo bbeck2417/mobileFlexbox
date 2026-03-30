@@ -3,11 +3,12 @@ import Column from "@/components/Column";
 import Row from "@/components/Row";
 import styles from "@/components/styles";
 import React from "react";
-import { StatusBar, View } from "react-native";
+import { StatusBar } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar hidden={false} />
       <Row>
         <Column>
@@ -39,6 +40,6 @@ export default function HomeScreen() {
           <Box>#12</Box>
         </Column>
       </Row>
-    </View>
+    </SafeAreaView>
   );
 }
